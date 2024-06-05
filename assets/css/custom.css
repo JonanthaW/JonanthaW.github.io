@@ -20,6 +20,7 @@
 
   a {
     text-decoration: none;
+    font-size: 1.8vh;
   }
 
   ul {
@@ -150,11 +151,23 @@
     justify-content: center;
   }
 
+
+  .showTech {
+    display: flex;
+justify-content: center;
+gap: 2vw;
+  }
+
+  .showTech img {
+    width: 3vw;
+  }
+
   .secondaryContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 3vw 0 3vw 0;
+    max-width: 90%;
   }
 
   .details {
@@ -181,11 +194,22 @@
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    margin: 2vw 0vw;
+    margin: 1vw 0vw;
     cursor: pointer;
   }
 
+  #frontend_text, #backend_text {
+    font-size: 1.1vw;
+    padding: 2vw 0 0 0;
+    font-weight: normal;
+  }
+
+  #backend_text {
+    padding: 0 0 1vw 0 !important;
+  }
+
   #projectImage {
+    height: 35vh;
   }
 
   #projectName {
@@ -193,7 +217,72 @@
     margin-top: 20px;
   }
 
+#projectRole {
+  color: #686868;
+}
+
   #projectRole, #projectLanguage {
     font-size: 15px;
     margin-bottom: 15px;
   }
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.AboutMe p {
+  font-size: 2vh;
+}
+
+.showBackend {
+
+}
+
+.showBackend ul {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.showBackend ul li {
+  background-color: white;
+  padding: 1vw;
+}
+
+
+
+
+/* Color for the tools*/
+
+.showTech:hover {
+  cursor: pointer;
+}
+
+#angular:hover {
+  filter: invert(27%) sepia(57%) saturate(3243%) hue-rotate(348deg) brightness(89%) contrast(93%);
+}
+
+#java:hover {
+  filter: invert(52%) sepia(73%) saturate(472%) hue-rotate(354deg) brightness(97%) contrast(90%);
+}
+
+#javascript:hover {
+  filter: invert(89%) sepia(16%) saturate(3057%) hue-rotate(1deg) brightness(106%) contrast(85%);
+}
+
+#spring:hover {
+  filter: invert(78%) sepia(86%) saturate(543%) hue-rotate(41deg) brightness(90%) contrast(103%);
+}
+
+#postgres:hover {
+  filter: invert(13%) sepia(79%) saturate(3706%) hue-rotate(240deg) brightness(108%) contrast(101%);
+}
+
+#mysql:hover {
+  filter: invert(54%) sepia(8%) saturate(2894%) hue-rotate(163deg) brightness(89%) contrast(96%);
+}
+
+#mongo:hover {
+  filter: invert(57%) sepia(78%) saturate(287%) hue-rotate(94deg) brightness(91%) contrast(91%);
+}
